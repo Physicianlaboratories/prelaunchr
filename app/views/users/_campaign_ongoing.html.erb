@@ -1,6 +1,13 @@
-<div class="key"></div>
-<p class="byline brandon">Be the first to know</p>
-<%= form_for @user, :url => { :action => "create" } do |f| %>
-  <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
-  <input class="submit brandon" name="commit" type="submit" value="Step Inside" />
-<% end %>
+<img class = "logo" src = "<%= asset_path('home/logo.png') %>" >
+<h1 class="main-title text-uppercase">Never Go Unprotected</h1>
+<p class="subtitle text-uppercase">Be the first to know</p>
+<div class="form-wrapper text-uppercase">
+  <%= form_for @user, :url => { :action => "create" }, html: { class:  "form-inline" } do |f| %>
+    <div class = "form-group">
+      <%= f.text_field :email, :placeholder => "E-mail", :class => "email form-control", :required => "true" %>
+    </div>
+    <div class = "form-group" >
+      <input class="submit form-control" name="commit" type="submit" value="Step Inside" />
+    </div>
+  <% end %>
+</div>
