@@ -8,7 +8,6 @@ gem 'devise'
 gem 'pg', '~> 0.21'
 gem 'rails', '~> 4.2'
 gem 'unicorn'
-gem "dotenv-rails"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -43,4 +42,5 @@ end
 group :production do
   gem 'rails_12factor'
   gem 'rails_serve_static_assets'
+  gem "dotenv-rails"
 end
