@@ -19,28 +19,28 @@ class User < ActiveRecord::Base
       'html' => 'Moisturizing<br>Cream',
       'class' => 'two',
       'image' =>  ActionController::Base.helpers.asset_path(
-        'refer/cream-tooltip@2x.png')
+        '/assets/refer/cream-tooltip@2x.png')
     },
     {
       'count' => 10,
       'html' => 'SPF<br>Sunscreen',
       'class' => 'three',
       'image' => ActionController::Base.helpers.asset_path(
-        'refer/truman@2x.png')
+        '/assets/refer/truman@2x.png')
     },
     {
       'count' => 25,
       'html' => 'Moisturizing<br>Cream and SPF<br>Sunscreen',
       'class' => 'four',
       'image' => ActionController::Base.helpers.asset_path(
-        'refer/winston@2x.png')
+        '/assets/refer/winston@2x.png')
     },
     {
       'count' => 50,
       'html' => 'One year free<br>Moisturizing Cream<br>and Sunscreen',
       'class' => 'five',
       'image' => ActionController::Base.helpers.asset_path(
-        'refer/blade-explain@2x.png')
+        '/assets/refer/blade-explain@2x.png')
     }
   ]
 

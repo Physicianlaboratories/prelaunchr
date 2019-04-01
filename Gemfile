@@ -8,7 +8,7 @@ gem 'devise'
 gem 'pg'
 gem 'rails', '~> 4.2'
 gem 'unicorn'
-
+gem "dotenv-rails"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -23,7 +23,6 @@ group :development, :test do
   gem 'rspec-rails', '3.4.2'
   gem 'rspec-mocks', '3.4.1'
   gem 'test-unit', '~> 3.0'
-  gem "dotenv-rails"
   gem 'pry-byebug'
   gem 'web-console', '~> 2.0'
   gem 'letter_opener', '~> 1.4'
