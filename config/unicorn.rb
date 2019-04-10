@@ -1,5 +1,13 @@
 worker_processes 3
-timeout 30
+working_directory '/home/ubuntu/app/current'
+timeout 120
+
+listen '/tmp/web_platform.sock', backlog: 2048
+pid 'tmp/pids/unicorn-web.pid'
+
+stdout_path 'log/unicorn-web.log'
+stderr_path 'log/unicorn-web.log'
+
 preload_app true
 
 before_fork do |server, worker|

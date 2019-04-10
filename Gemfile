@@ -25,6 +25,10 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'web-console', '~> 2.0'
   gem 'letter_opener', '~> 1.4'
+  gem "capistrano", "~> 3.11", require: false
+  gem "capistrano-rails", "~> 1.4", require: false
+  gem 'capistrano-rvm'
+  gem 'capistrano-rake', require: false
 end
 
 # To use ActiveModel has_secure_password
