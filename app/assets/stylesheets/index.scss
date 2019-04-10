@@ -128,7 +128,7 @@ h2{
     }
   }
   .page-wrapper{
-    padding: 80px 0;
+    padding: 80px 10px;
   }
 }
 .ampersant {
@@ -195,6 +195,14 @@ h2{
     color: #fff;
   }
 }
+.email-btn {
+  background: #969696;
+  color: #fff;
+  &:hover, &:active, &:focus{
+    background: #8d8787;
+    box-shadow: none;
+  }
+}
 .copy-link-wrap {
   display: flex;
   align-items: center;
@@ -207,14 +215,6 @@ h2{
     border: 1px solid #BEBEBE;
     font-size: 16px;
     line-height: 22px;
-  }
-  .email-btn {
-    background: #969696;
-    color: #fff;
-    &:hover, &:active, &:focus{
-      background: #8d8787;
-      box-shadow: none;
-    }
   }
 }
 

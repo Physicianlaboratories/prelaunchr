@@ -49,6 +49,16 @@
     font-size: 18px;
     line-height: 24px;
   }
+  .form-wrapper{
+    .form-inline{
+      .form-group {
+        width: 40%;
+        &:nth-child(2n) {
+          width: 24%;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 767px){
   .home-wrapper{
@@ -62,6 +72,7 @@
   h1{
     font-size: 36px;
     line-height: 49px;
+    margin-top: 50px;
   }
   h2{
     font-size: 32px;
@@ -88,9 +99,30 @@
         margin-right:0;
         &:nth-child(2n) {
           width: 100%;
-          margin-top: 20px;
         }
       }
-    } 
+    }
+  }
+  .prizes{
+    .progress{
+      top: 90px;
+      .mover{
+        width: 0%;
+      }
+    }
+    &.prize-two .progress .mover { width:25% ; }
+    &.prize-three .progress .mover{ width: 50%; }
+    &.prize-four .progress .mover{ width: 75%; }
+    &.prize-five .progress .mover{ width: 100%; }
+     ul.products{
+      li.title{
+        display: none;
+      }
+      li.product{
+        width: 25%;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
   }
 }

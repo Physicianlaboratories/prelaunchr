@@ -32,18 +32,20 @@
     <p><b>Share your unique link via email</b>, Facebook or Twitter and <br />earn Alex's goods for each friend who signs up.</p>
     <div class="social-links text-uppercase">
       <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Alex's" class="btn social-btn fb-btn" target="_blank">
-        Facebook <img src = "<%= asset_path('refer/Facebook.png') %>" >
+        <span class="d-none d-sm-inline">Facebook</span> <img src = "<%= asset_path('refer/Facebook.png') %>" >
       </a>
       <% twitter_message = "Excited for Alex's to launch." %>
       <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="btn social-btn tw-btn" target="_blank">
-        Twitter <img src = "<%= asset_path('refer/Twitter.png') %>" >
+        <span class="d-none d-sm-inline">Twitter</span> <img src = "<%= asset_path('refer/Twitter.png') %>" >
       </a>
+      <a href= "mailto:?subject=Alex's&body=Hi,I found this website
+and thought you might like it <%= root_url %>?ref=<%= @user.referral_code %>" class="d-sm-none btn social-btn email-btn text-uppercase"><img src = "<%= asset_path('refer/email-icon.png') %>" ></a>
     </div>
     <p><b>OR</b></p>
     <div class="copy-link-wrap">
       <div class="link-text"><%= root_url %>?ref=<%= @user.referral_code %></div>
       <a href= "mailto:?subject=Alex's&body=Hi,I found this website
-and thought you might like it <%= root_url %>?ref=<%= @user.referral_code %>" class="btn social-btn email-btn text-uppercase">Email <img src = "<%= asset_path('refer/email-icon.png') %>" ></a>
+and thought you might like it <%= root_url %>?ref=<%= @user.referral_code %>" class=" d-none d-sm-inline btn social-btn email-btn text-uppercase"><span>Email</span> <img src = "<%= asset_path('refer/email-icon.png') %>" ></a>
     </div>
     <p class="friend-count"><b><%= referrals_count %> <%= referrals_count == 1 ? "friend has" : "friends have" %> joined so far</b></p>
 
